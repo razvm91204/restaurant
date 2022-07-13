@@ -1,0 +1,57 @@
+/*main colors 
+* BG: rgb(27, 36, 48)
+* NAV + MIDDLEWARE: rgb(81, 85, 126)
+* CARDS: rgb(214, 213, 168)
+* TEXT: rgb(129, 103, 151)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+    background-color:rgb(27, 36, 48);
+}
+:root{
+    font-family:'Indie Flower';
+    color:rgb(129, 103, 151);
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    width:100vw;
+    height:80px;
+    background-color: rgb(81, 85, 126);
+    align-items:center;
+}
+
+.nav-btn{
+    font-size:30px;
+    /* margin:15px; */
+    display:flex;
+    align-items:center;
+    background-color:rgb(214, 213, 168);
+    justify-content: center;
+    height:50%;
+    margin:15px;
+    width:6%;
+    cursor:pointer;
+    transition:0.1s;
+    box-shadow:0px 4px 5px 1px rgba(0, 0, 0, 0.349);
+}
+
+.nav-btn:nth-child(odd){
+    transform: rotate(2deg);
+}
+.nav-btn:nth-child(even){
+    transform: rotate(-2deg);
+}
+
+.nav-btn:hover{
+    transform: scale(1.15) rotate(0deg);
+    transition:0.1s;
+    filter:brightness(1.05);
+
+}
